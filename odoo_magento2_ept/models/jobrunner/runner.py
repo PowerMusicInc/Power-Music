@@ -148,7 +148,7 @@ def _async_http_get(port, db_name, job_uuid):
     #       if this was python3 I would be doing this with
     #       asyncio, aiohttp and aiopg
     def urlopen():
-        url = ('http://localhost:%s/connector/runjob?db=%s&job_uuid=%s' %
+        url = ('https://github.com/PowerMusicInc/Power-Music.git:%s/connector/runjob?db=%s&job_uuid=%s' %
                (port, db_name, job_uuid))
         try:
             # we are not interested in the result, so we set a short timeout
